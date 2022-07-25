@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --laranjaescuro: #ff4500;
+    --laranjaclaro: rgb(252, 157, 33);
+    --texto: #fff
+    --rosa: rgb(247, 105, 128);
+    --classico:  rgb(49, 41, 41);
+}
+
+@font-face {
+    font-family: 'daviton';
+    src: url("daviton.otf");
+}
+
+body.pink {
+    background-color: rgb(247, 105, 128);
+    color: #fff;
+}
+
+body.orange {
+    background: linear-gradient(90deg, rgba(221, 147, 50, 0.829), rgb(247, 141, 4));
+    color: #fff;
+}
+
+body.special {
+    background-color: rgb(129, 125, 125);
+    color: #fff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+body h1 {
+    font-family: 'daviton', 'sans';
+    letter-spacing: 10px;
+    color: crimson;
+}
+
+.box {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 25%;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.box input[type="submit"] {
+    background-color: var(--classico);
+    width: 90px;
+    padding: 10px;
+    border: none;
+    color: #fff;
+    border: 1px solid transparent;
+    margin: 0 auto;
+    display: block;
+    transition: 0.8s ;
+    border-radius: 5px;
+}
+
+.box textarea {
+    resize: none;
+    width: 90%;
+    height: 10%;
+    border-radius: 8px;
+}
+
+.box input[type="text"], input[type="email"], input[type="file"], select {
+    padding: 3px;
+    border-radius: 8px;
+}
+
+.box input[type="submit"]:hover {
+    background-color: var(--laranjaescuro);
+    border: 1px solid white;
+}
+
+.box input[type="text"]:focus, input[type="email"]:focus, input[type="file"]:focus, textarea:focus, select:focus {
+    background-color: rgba(211, 57, 88, 0.534);
+}
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body class="orange">
+    <h1>Cadastro de Personagens</h1>
+    <div class="box">
+        <form action="https://formsubmit.co/natashateresa1998@gmail.com" method="post" enctype="multipart/form-data">
+            <label for="nome">Nome e Sobrenome: </label>
+            <input type="text"  name="nome" id="nome" placeholder="Nome e Sobrenome" required> 
+            <br><br>
+            <label for="email" placeholder="email">Email: </label> 
+            <input type="email" name="email" id="email" placeholder="exemple@mail.com" required> 
+            <br><br>
+            <label for="foto">Foto: </label> <br>
+            <input type="file" name="foto" id="foto" accept=".jpg, .png"> 
+            <br><br>
+            <span>Genero: </span>
+            <input type="radio" name="genero" id="f" value="f" required> 
+            <label for="genero">F</label> 
+            <input type="radio" name="genero" id="m" value="m"> 
+            <label for="genero">M</label> 
+            <input type="radio" name="genero" id="o" value="outros"> 
+            <label for="genero">Outros</label> 
+            <br><br>
+            <label for="estado">Estado: </label>
+            <select name="estado" id="estado" required>
+                <option value="">Escolha seu estado</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="SP">São Paulo</option>
+                <option value="MA">Marte</option>
+                <option value="IM">Imaginação</option>
+            </select>
+            <br><br>
+            <label for="comentario">Comentário: </label><br>
+            <textarea name=comentario" id="comentario">
+            </textarea>
+            <br><br>
+            <input type="submit" value="Enviar" name="submit">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
+        </form>
+    </div>
+</body>
+</html>
